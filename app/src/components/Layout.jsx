@@ -1,4 +1,6 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import Navbar from './Navbar'
+import Footer from './Footer'
 import './Layout.css'
 
 const MENU = [
@@ -12,20 +14,11 @@ const MENU = [
 export default function Layout() {
   return (
     <div className="kerangka">
-      <header className="kepala">
-        <strong>Daftar Koleksi Film</strong>
-        <nav className="menu">
-          {MENU.map(({ ke, label }) => (
-            <NavLink key={ke} to={ke} end={ke === '/'}>
-              {label}
-            </NavLink>
-          ))}
-        </nav>
-      </header>
-      <main className="isi">
+      <Navbar menu={MENU} />
+      <main id="konten-utama" className='isi'>
         <Outlet />
       </main>
-      <footer className="kaki">Ujian Tengah Semester Pengembangan Aplikasi Web</footer>
+      <Footer />
     </div>
   )
 }
