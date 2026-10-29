@@ -69,7 +69,7 @@ Nama: Ivan Nandira Mangunang
 NIM: 123140094
 Kelas: RA
 Tema: Daftar Tontonan Film dan Serial
-Deployment: https://USERNAME.github.io/uts-paw/
+Deployment: https://v4nzz.github.io/uts-paw/
 
 ![Tangkapan layar beranda](docs/beranda.png)
 
