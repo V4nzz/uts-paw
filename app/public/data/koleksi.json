@@ -1,10 +1,122 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Laskar Pelangi",
+    "kategori": "Drama",
+    "sutradara": "Riri Riza",
+    "tahunRilis": 2008,
+    "rating": "7.9"
+  },
+  {
+    "id": "2",
+    "judul": "Toy Story",
+    "kategori": "Animasi",
+    "sutradara": "John Lasseter",
+    "tahunRilis": 1995,
+    "rating": "8.3"
+  },
+  {
+    "id": "3",
+    "judul": "Pengabdi Setan",
+    "kategori": "Horror",
+    "sutradara": "Joko Anwar",
+    "tahunRilis": 2017,
+    "rating": "7.6"
+  },
+  {
+    "id": "4",
+    "judul": "Inside Out",
+    "kategori": "Animasi",
+    "sutradara": "Pete Docter",
+    "tahunRilis": 2015,
+    "rating": "8.1"
+  },
+  {
+    "id": "5",
+    "judul": "The Raid: Redemption",
+    "kategori": "Aksi",
+    "sutradara": "Gareth Evans",
+    "tahunRilis": 2011,
+    "rating": "7.6"
+  },
+  {
+    "id": "6",
+    "judul": "Coco",
+    "kategori": "Animasi",
+    "sutradara": "Lee Unkrich",
+    "tahunRilis": 2017,
+    "rating": "8.4"
+  },
+  {
+    "id": "7",
+    "judul": "Ngeri-Ngeri Sedap",
+    "kategori": "Komedi",
+    "sutradara": "Bene Dion Rajagukguk",
+    "tahunRilis": 2022,
+    "rating": "8.0"
+  },
+  {
+    "id": "8",
+    "judul": "Finding Nemo",
+    "kategori": "Animasi",
+    "sutradara": "Andrew Stanton",
+    "tahunRilis": 2003,
+    "rating": "8.2"
+  },
+  {
+    "id": "9",
+    "judul": "Mencuri Raden Saleh",
+    "kategori": "Aksi",
+    "sutradara": "Angga Dwimas Sasongko",
+    "tahunRilis": 2022,
+    "rating": "8.1"
+  },
+  {
+    "id": "10",
+    "judul": "Up",
+    "kategori": "Animasi",
+    "sutradara": "Pete Docter",
+    "tahunRilis": 2009,
+    "rating": "8.3"
+  },
+  {
+    "id": "11",
+    "judul": "Monster, Inc",
+    "kategori": "Animasi",
+    "sutradara": "Pete Docter",
+    "tahunRilis": 2001,
+    "rating": "8.1"
+  },
+  {
+    "id": "12",
+    "judul": "Agak Laen",
+    "kategori": "Komedi",
+    "sutradara": "Muhadkly Acho",
+    "tahunRilis": 2024,
+    "rating": "8.2"
+  },
+  {
+    "id": "13",
+    "judul": "Budi Pekerti",
+    "kategori": "Drama",
+    "sutradara": "Wregas Bhanuteja",
+    "tahunRilis": 2023,
+    "rating": "7.9"
+  },
+  {
+    "id": "14",
+    "judul": "WALL-E",
+    "kategori": "Animasi",
+    "sutradara": "Andrew Stanton",
+    "tahunRilis": 2008,
+    "rating": "8.4"
+  },
+  {
+    "id": "15",
+    "judul": "Ratatouille",
+    "kategori": "Animasi",
+    "sutradara": "Brad Bird",
+    "tahunRilis": 2007,
+    "rating": "8.1"
   }
 ]
