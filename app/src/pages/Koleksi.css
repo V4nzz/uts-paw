@@ -1,0 +1,126 @@
+.koleksi-header {
+    margin-bottom: 2rem;
+}
+
+.koleksi-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0 0 0.5rem;
+}
+
+.alat-koleksi {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.alat-koleksi input[type="search"] {
+    flex: 1;
+    min-width: 240px;
+    background: #141620;
+    border: 1px solid #282c3f;
+    color: #f1f5f9;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.alat-koleksi input[type="search"]::placeholder {
+    color: #64748b;
+}
+
+.alat-koleksi input[type="search"]:focus {
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+}
+
+.alat-koleksi select {
+    background: #141620;
+    border: 1px solid #282c3f;
+    color: #f1f5f9;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.alat-koleksi select:focus {
+    border-color: #E50914;
+}
+
+.alat-koleksi select option {
+    background: #12131a;
+    color: #ffffff;
+}
+
+.daftar-kartu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.kartu {
+    background: #141620;
+    border: 1px solid #232736;
+    border-radius: 14px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kartu:hover {
+    transform: translateY(-4px);
+    border-color: rgba(229, 9, 20, 0.45);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.kartu h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.kartu h3 a {
+    color: #f8fafc;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+.kartu:hover h3 a {
+    color: #E50914;
+}
+
+.kartu p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #1f2330;
+    padding-top: 0.85rem;
+    margin-top: 1rem;
+}
+
+.koleksi-kosong {
+    padding: 3rem 1rem;
+    text-align: center;
+    color: #64748b;
+    font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+    .daftar-kartu {
+        grid-template-columns: 1fr;
+    }
+}
