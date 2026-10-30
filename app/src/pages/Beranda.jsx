@@ -7,14 +7,12 @@ export default function Beranda() {
   const { items, loading } = useKoleksi()
   const jumlahKategori = new Set(items.map((item) => item.kategori)).size
 
-  // Ambil 3 film rilisan terbaru untuk spotlight display (human-designed touch)
   const filmTerbaru = [...items]
     .sort((a, b) => (b.tahunRilis || 0) - (a.tahunRilis || 0))
     .slice(0, 3)
 
   return (
     <section className="beranda-container">
-      {/* Kolom Kiri: Info & Ringkasan */}
       <div className="beranda-intro">
         <span className="label-meta">{mahasiswa.tema}</span>
         <h1 className="beranda-judul">Koleksi Tontonan Film & Serial</h1>
@@ -48,7 +46,6 @@ export default function Beranda() {
         </div>
       </div>
 
-      {/* Kolom Kanan: Preview Nyata Data Film (Bukan sekadar kotak kosong) */}
       <div className="beranda-spotlight">
         <h3 className="spotlight-title">Sorotan Terbaru</h3>
         {loading ? (
