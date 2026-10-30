@@ -62,7 +62,6 @@ Penilaian akhir selalu memakai `grader/` dan `shared/` versi repo induk, jadi me
 
 Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Kerangka berikut boleh dipakai:
 
-```markdown
 # Nama Aplikasi
 
 Nama: Ivan Nandira Mangunang
@@ -71,19 +70,33 @@ Kelas: RA
 Tema: Daftar Tontonan Film dan Serial
 Deployment: https://v4nzz.github.io/uts-paw/
 
-![Tangkapan layar beranda](docs/beranda.png)
+![Tangkapan layar beranda](app/public/Beranda.png)
 
 ## Fitur
 
-- ...
+- **Koleksi Film & Serial**: Nampilin daftar film dalam bentuk grid kartu yang rapi dan responsif di HP maupun laptop.
+- **Cari & Filter Genre**: Bisa langsung cari film lewat judul dan filter berdasarkan kategori (Drama, Horror, Aksi, Animasi, dll).
+- **Preview Film Terbaru**: Ada widget sorotan 3 film terbaru dan total koleksi di halaman Beranda.
+- **Detail Film & Hapus**: Bisa buka detail info film (sutradara, tahun, rating) dan ada tombol hapus item.
+- **Tambah Film**: Form tambah koleksi lengkap dengan validasi kalau judul kosong/kurang dari 3 huruf.
+- **Statistik & Visual Bar**: Halaman rangkuman jumlah film per genre lengkap dengan progress bar persentase.
+- **Tampilan Dark Mode**: Desain bertema gelap ala Netflix (VANZFLIX) biar nyaman di mata.
 
 ## Menjalankan secara lokal
 
+```bash
 cd app
 npm install
 npm run dev
+```
 
 ## Konsep React yang dipakai
 
-- ...
-```
+- **State & Effect (`useState`, `useEffect`)**: Dipakai buat nyimpen data form, keyword pencarian, serta nanganin loading dan error pas fetch data JSON.
+- **Context API (`KoleksiContext`)**: Dipakai buat nyimpen data film secara global biar halaman Beranda, Koleksi, Tambah, dan Statistik bisa saling sync tanpa ribet lempar-lempar props.
+- **Custom Hook**: 
+  - `useKoleksi` buat mempermudah pemanggilan data dan fungsi tambah/hapus film.
+  - `useJudulDokumen` buat ganti judul tab browser otomatis sesuai halaman yang lagi dibuka.
+- **Routing (`react-router-dom`)**: Pakai `BrowserRouter`, rute dinamis `/koleksi/:id` (`useParams`), `useNavigate` buat redirect setelah simpan, dan `NavLink` buat menu navbar aktif.
+- **Komponen Modular**: UI dipecah jadi beberapa komponen terpisah biar rapi (`Navbar`, `Footer`, `KartuItem`, `KotakPencarian`, `Layout`).
+- **Fitur ES6+**: Destructuring object, spread operator (`...`), template literal, serta method array bawaan JS kayak `.map()`, `.filter()`, dan `.reduce()`.
