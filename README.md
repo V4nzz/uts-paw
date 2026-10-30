@@ -64,10 +64,10 @@ Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Ke
 
 # Nama Aplikasi
 
-Nama: Ivan Nandira Mangunang
-NIM: 123140094
-Kelas: RA
-Tema: Daftar Tontonan Film dan Serial
+Nama: Ivan Nandira Mangunang  
+NIM: 123140094  
+Kelas: RA  
+Tema: Daftar Tontonan Film dan Serial  
 Deployment: https://v4nzz.github.io/uts-paw/
 
 ![Tangkapan layar beranda](app/public/Beranda.png)
