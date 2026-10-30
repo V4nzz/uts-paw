@@ -1,5 +1,6 @@
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi'
+import './Detail.css'
 
 export default function Detail() {
   const { id } = useParams()
@@ -10,7 +11,7 @@ export default function Detail() {
   if (loading) return <p>Memuat data...</p>
   if (!item) {
     return (
-      <section>
+      <section className='kartu-detail'>
         <h1>Item tidak ditemukan</h1>
         <Link to="/koleksi">Kembali ke daftar</Link>
       </section>
@@ -25,23 +26,34 @@ export default function Detail() {
   }
   
   return (
-    <section>
-      <h1>{item.judul}</h1>
-      <dl>
-        <dt>Kategori</dt>
-        <dd>{item.kategori}</dd>
-        <dt>Sutradara</dt>
-        <dd>{item.sutradara}</dd>
-        <dt>Tahun Rilis</dt>
-        <dd>{item.tahunRilis}</dd>
-        <dt>Rating</dt>
-        <dd>{item.rating}</dd>
+    <section className='kartu-detail'>
+      <div className='detail-header'>
+        <span className='badge-kategori'>{item.kategori}</span>
+        <h1 className='detail-judul'>{item.judul}</h1>
+      </div>
+      
+      <dl className='detail-list'>
+        <div className='detail-row'>
+          <dt>Sutradara</dt>
+          <dd>{item.sutradara || '-'}</dd>
+        </div>
+        <div className='detail-row'>
+          <dt>Tahun Rilis</dt>
+          <dd>{item.tahunRilis || '-'}</dd>
+        </div>
+        <div className='detail-row'>
+          <dt>Rating</dt>
+          <dd className='detail-rating'>&#9733; {item.rating || '-'}</dd>
+        </div>
       </dl>
-      <div className='aksi'>
-        <button type="button" onClick={konfirmasiHapus}>
-          Hapus
+
+      <div className='detail-aksi'>
+        <button type='button' className='btn-hapus' onClick={konfirmasiHapus}>
+          Hapus Film
         </button>
-      <Link to="/koleksi">Kembali ke daftar</Link>
+        <Link to="/koleksi" className='btn-kembali'>
+          &larr; Kembali ke daftar
+        </Link>
       </div>
     </section>
   )
