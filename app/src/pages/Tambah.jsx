@@ -52,7 +52,6 @@ export default function Tambah() {
       <input id="rating" name="rating" value={form.rating} onChange={ubah} />
 
       <button type="submit">Simpan</button>
-      <p>Isi state saat ini: {JSON.stringify(form)}</p>
     </form>
   )
 }

@@ -1,41 +1,109 @@
 .formulir {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    max-width: 480px;
+    gap: 0.6rem;
+    max-width: 540px;
+    margin: 1.5rem auto;
+    background: #141620;
+    border: 1px solid #232736;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.formulir h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0 0 1.25rem;
+    border-bottom: 1px solid #232736;
+    padding-bottom: 1rem;
 }
 
 .formulir label {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
     font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
 }
 
 .formulir input, .formulir select {
-    padding: 0.5rem 0.75rem;
-    border: 1px solid #c4c4c4;
-    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    background: #0f1017;
+    border: 1px solid #282c3f;
+    border-radius: 8px;
+    color: #f1f5f9;
     font: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.formulir input:focus, .formulir select:focus {
+    border-color: #E50914;
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.2);
+}
+
+.formulir select option {
+    background: #12131a;
+    color: #ffffff;
 }
 
 .formulir [role='alert'] {
-    margin: 0;
-    color: #b42318;
-    font-size: 0.9rem;
+    margin: 0.25rem 0 0;
+    color: #f87171;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 .formulir button {
     align-self: flex-start;
-    margin-top: 1rem;
-    padding: 0.6rem 1.5rem;
+    margin-top: 1.25rem;
+    padding: 0.75rem 1.75rem;
     border: 0;
-    border-radius: 6px;
-    background: #1f2328;
-    color: #fff;
+    border-radius: 8px;
+    background: #E50914;
+    color: #ffffff;
     font: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(229, 9, 20, 0.35);
+    transition: all 0.2s ease;
 }
 
-@media (max-width: 480px) {
+.formulir button:hover {
+    background: #c10710;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(229, 9, 20, 0.5);
+}
+
+.formulir button:active {
+    transform: scale(0.98);
+}
+
+.formulir p:last-child {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #232736;
+    color: #64748b;
+    font-size: 0.75rem;
+    font-family: monospace;
+    word-break: break-all;
+}
+
+@media (max-width: 600px) {
+    .formulir {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
     .formulir button {
         align-self: stretch;
     }
