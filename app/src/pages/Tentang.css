@@ -1,0 +1,133 @@
+.kartu-tentang {
+    max-width: 580px;
+    margin: 1.5rem auto;
+    background: #141620;
+    border: 1px solid #232736;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.tentang-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #232736;
+    padding-bottom: 1.25rem;
+}
+
+.badge-dev {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    background: rgba(229, 9, 20, 0.12);
+    border: 1px solid rgba(229, 9, 20, 0.3);
+    color: #ff4d58;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+
+.tentang-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.tentang-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0 0 2rem;
+}
+
+.tentang-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #1c1f2c;
+}
+
+.tentang-row dt {
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.tentang-row dd {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.sorot-nama {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.tentang-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+.repo-link {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #64748b;
+  word-break: break-all;
+}
+
+.repo-link a {
+  color: #f87171;
+  text-decoration: none;
+}
+
+.repo-link a:hover {
+  text-decoration: underline;
+}
+
+.tentang-aksi {
+  margin-top: 0.5rem;
+}
+
+.btn-porto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #E50914;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none !important;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.35);
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.btn-porto:hover {
+  background: #c10710;
+  box-shadow: 0 6px 22px rgba(229, 9, 20, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-porto:active {
+  transform: scale(0.99);
+}
+
+@media (max-width: 600px) {
+  .kartu-tentang {
+    padding: 1.5rem;
+  }
+  .tentang-header h1 {
+    font-size: 1.7rem;
+  }
+}
